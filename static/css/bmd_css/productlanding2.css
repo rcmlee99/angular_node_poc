@@ -1,0 +1,324 @@
+/*------------------------------------------------------------------------------------
+product landing
+------------------------------------------------------------------------------------*/
+.productLanding {
+  padding-bottom: 15px;
+}
+.productLanding h1 {
+  background-image: url('images2/product-landing/bg-top-rounded.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 1000px 8px;
+  margin: 0 -1px;
+  padding: 33px 44px 14px 44px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .productLanding h1 { background-image: url("images2/product-landing/bg-top-rounded@2x.png"); }
+}
+.productLanding section {
+  width: 100%;
+  position: relative;
+  margin-top: 34px;
+}
+.productLanding section div {
+  background: transparent url('images2/product-landing/bg-grad-product-section.jpg') no-repeat left top;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 1000px 140px;
+  padding: 0 44px;
+  border-top: 1px solid #e5e5e5;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .productLanding section div { background-image: url("images2/product-landing/bg-grad-product-section@2x.jpg"); }
+}
+.productLanding h2 {
+  display: block;
+  height: 35px;
+  width: 455px;
+  background-image: url('../../images/product-landing/section-tabs-en.png?v=4');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 455px 665px;
+  text-indent: -9999px;
+  top: -34px;
+  left: 44px;
+  position: absolute;
+  padding: 0;
+}
+.fr .productLanding h2 { background-image: url('images2/product-landing/section-tabs-fr.png?v=4'); }
+.es .productLanding h2 { background-image: url('images2/product-landing/section-tabs-es.png?v=4'); }
+.de .productLanding h2 { background-image: url('images2/product-landing/section-tabs-de.png?v=4'); }
+.cn .productLanding h2 { background-image: url('images2/product-landing/section-tabs-cn.png?v=4'); }
+.jp .productLanding h2 { background-image: url('images2/product-landing/section-tabs-jp.png?v=4'); }
+.kr .productLanding h2 { background-image: url('images2/product-landing/section-tabs-kr.png'); }
+.ru .productLanding h2 { background-image: url('images2/product-landing/section-tabs-ru.png'); }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .productLanding h2 { background-image: url("images2/product-landing/section-tabs-en@2x.png?v=4"); }
+  .fr .productLanding h2 { background-image: url("images2/product-landing/section-tabs-fr@2x.png?v=4"); }
+  .es .productLanding h2 { background-image: url("images2/product-landing/section-tabs-es@2x.png?v=4"); }
+  .de .productLanding h2 { background-image: url("images2/product-landing/section-tabs-de@2x.png?v=4"); }
+  .cn .productLanding h2 { background-image: url("images2/product-landing/section-tabs-cn@2x.png?v=4"); }
+  .jp .productLanding h2 { background-image: url("images2/product-landing/section-tabs-jp@2x.png?v=4"); }
+  .kr .productLanding h2 { background-image: url("images2/product-landing/section-tabs-kr@2x.png"); }
+  .ru .productLanding h2 { background-image: url("images2/product-landing/section-tabs-ru@2x.png"); }
+}
+.productLanding h3 {
+  font-size: 16px;
+  line-height: normal;
+  margin: 15px 0 2px 0;
+  padding: 0;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+.productLanding p { font-size: 13px; line-height: 17px; margin-bottom: 8px; }
+.productLanding p a { font-weight: 400; }
+.productLanding section article p.tagline { color: #666; width: 200px; }
+.productLanding section article.two-col p.tagline { color: #666; width: 400px; }
+.productLanding section article p.read-more { margin-bottom: 26px; }
+.productLanding section article { width: 425px; float: left; position: relative; padding: 0 0 0 30px; }
+.productLanding section article:nth-child(even) { padding-left: 45px; width: 410px; }
+.productLanding section article.two-col { width: 850px; }
+.productLanding section article img { position: absolute; }
+
+/* tab titles */
+#section-blackmagic-cameras { background-position: 0 -420px; }
+#section-production-switchers { background-position: 0 -280px; }
+#section-disk-recorders { background-position: 0 -175px; }
+#section-pcie-capture-and-playback { background-position: 0 -455px; }
+#section-usb-capture-and-playback { background-position: 0 -490px; }
+#section-thunderbolt-capture-and-playback { background-position: 0 -525px; }
+#section-video-processing { background-position: 0 -560px; }
+#section-color-correction { background-position: 0 -105px; }
+#section-film-restoration { background-position: 0 -140px; }
+#section-converters { background-position: 0 -245px; }
+#section-routing-and-distribution { background-position: 0 -315px; }
+#section-monitoring { background-position: 0 -210px; }
+#section-audio-monitoring { background-position: 0 -595px; }
+#section-storage { background-position: 0 -630px; }
+#section-test-equipment { background-position: 0 -385px; }
+#section-h264-encoding { background-position: 0 -350px; }
+
+/* product customization */
+#item-blackmagic-pocket-cinema-camera a img { top: -59px; right: 42px; }
+#item-blackmagic-cinema-camera { height: 330px; }
+#item-blackmagic-cinema-camera a img { top: 94px; right: -35px; }
+#item-blackmagic-cinema-camera p.tagline { width: 400px; }
+#item-blackmagic-production-camera-4k { height: 330px; }
+#item-blackmagic-production-camera-4k a img { top: 107px; right: -25px; }
+#item-blackmagic-production-camera-4k p.tagline { width: 400px; }
+#item-blackmagic-production-camera-4k p.price,
+#item-blackmagic-production-camera-4k p.read-more { display: inline-block; margin-right: 10px; }
+#item-atem a img { top: 9px; right: -37px; }
+#item-atem-television-studio a img { top: 83px; right: 14px; }
+#item-atem-television-studio p.tagline { width: 260px; }
+#item-atem-converters a img { top: 65px; right: -2px; }
+#item-atem-converters p.tagline { width: 330px; }
+#item-atem-production-studio-4k a img { top: 45px; right: -39px; }
+#item-hyperdeck-shuttle a img { top: 20px; right: 14px; }
+#item-hyperdeck-studio a img { top: 66px; right: -8px; }
+#item-hyperdeck-studio p.tagline { width: 410px; }
+#item-decklink a img { top: -46px; right: -35px; }
+#item-intensity a img { top: 16px; right: 22px; }
+#item-intensity-shuttle-usb3 a img { top: 10px; right: 4px; }
+#item-ultrastudio-for-usb3 a img { top: -64px; right: 0; }
+#item-ultrastudio-for-usb3 p.tagline { width: 240px; }
+#item-intensity-shuttle-thunderbolt a img { top: 10px; right: 5px; }
+#item-intensity-extreme a img { top: 39px; right: -2px; }
+#item-ultrastudio-for-thunderbolt a img { top: -16px; right: -48px; }
+#item-teranex-processing a img { top: 45px; right: -52px; }
+#item-davinci-resolve a img { top: 19px; right: -54px; }
+#item-davinci-revival a img { top: -19px; right: -29px; }
+#item-mini-converters a img { top: 15px; right: 25px; }
+#item-mini-converters p.tagline { width: 220px; }
+#item-mini-converter-heavy-duty a img { top: 15px; right: 13px; }
+#item-battery-converters a img { top: 15px; right: 34px; }
+#item-battery-converters p.tagline { width: 220px; }
+#item-opengear-converters a img { top: 15px; right: 2px; }
+#item-videohub a img { top: -19px; right: -30px; }
+#item-videohub p.tagline { width: 310px; }
+#item-videohub-control a img { top: 81px; right: 5px; }
+#item-videohub-control p.tagline { width: 280px; }
+#item-universal-videohub a img { top: 25px; right: 0; }
+#item-universal-videohub p.tagline { width: 180px; }
+#item-hdlink a img { top: 51px; right: 2px; }
+#item-dvi-extender a img { top: 10px; right: 24px; }
+#item-smartview a img { top: -8px; right: -30px; }
+#item-smartscope-duo a img { top: 25px; right: 25px; }
+#item-blackmagic-audio-monitor a img { top: 45px; right: -39px; }
+#item-blackmagic-multidock p.tagline { width: 390px; }
+#item-blackmagic-multidock a img { top: 46px; right: -37px; }
+#item-smartscope-duo-test-equipment a img { top: 62px; right: 15px; }
+#item-smartscope-duo-test-equipment p.tagline { width: 260px; }
+#item-ultrascope a img { top: -10px; right: 0; }
+#item-video-recorder a img { top: -39px; right: 22px; }
+#item-video-recorder p.tagline { width: 250px; }
+#item-h264-pro-recorder a img { top: 15px; right: 17px; }
+
+#item-ultrastudio-4k a img { top: 52px; left: 462px; }
+#item-ultrastudio-4k p.tagline { width: 365px; }
+
+#item-ultrastudio-express p.tagline { width: 215px; }
+#item-ultrastudio-express a img { top: 40px; left: 248px; }
+#item-ultrastudio-mini a img { top: 42px; left: 242px; }
+
+#Home-products #item-intensity-shuttle-thunderbolt a img { top: 10px; right: -10px; }
+
+/* new product ribbon */
+.new-product { z-index: 2; }
+#item-blackmagic-pocket-cinema-camera .new-product { top: -1px; right: -75px; }
+#item-blackmagic-production-camera-4k .new-product { top: -1px; right: -45px; }
+#item-atem-converters .new-product { top: -1px; right: -45px; }
+#item-atem-production-studio-4k .new-product { top: -1px; right: -75px; }
+#item-mini-converters .new-product { top: -1px; right: -11px; }
+#item-hyperdeck-studio .new-product { top: -1px; right: -45px; }
+#item-decklink .new-product { top: -1px; right: -75px; }
+#item-davinci-resolve .new-product { top: -1px; right: -75px; }
+#item-smartscope-duo .new-product { top: -1px; right: -75px; }
+#item-blackmagic-audio-monitor .new-product { top: -1px; right: -75px; }
+#item-blackmagic-multidock .new-product { top: -1px; right: -75px; }
+#item-smartscope-duo-test-equipment .new-product { top: -1px; right: -11px; }
+
+/* clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }
+
+/* cn */
+.cn #item-blackmagic-pocket-cinema-camera p.tagline { width: 425px; }
+.cn #item-atem-converters p.tagline { width: 410px; }
+.cn #item-atem-television-studio p.tagline { width: 200px; }
+.cn #item-hyperdeck-shuttle a img { top: 30px; }
+.cn #item-hyperdeck-shuttle p.tagline { width: 240px; }
+.cn #item-universal-videohub p.tagline { width: 190px; }
+.cn #item-smartscope-duo-test-equipment p.tagline { width: 290px; }
+.cn #item-ultrastudio-4k p.tagline { width: 375px; }
+
+/* de */
+.de #item-blackmagic-cinema-camera p.read-more { width: 80px; }
+.de #item-atem-converters p.tagline { width: 410px; }
+.de #item-atem-television-studio p.tagline { width: 360px; }
+.de #item-hyperdeck-shuttle p.tagline { width: 180px; }
+.de #item-intensity-shuttle-thunderbolt p.tagline { width: 240px; }
+.de #item-opengear-converters p.tagline { width: 180px; }
+.de #item-videohub p.tagline { width: 360px; }
+.de #item-ultrascope p.tagline { width: 190px; }
+.de #item-mini-converters p.tagline { width: 210px; }
+.de #item-video-recorder p.tagline { width: 220px; }
+.de #item-decklink p.tagline { width: 410px; }
+
+/* es */
+.es #item-blackmagic-pocket-cinema-camera a img { right: 32px; }
+.es #item-blackmagic-cinema-camera { height: 345px;}
+.es #item-blackmagic-cinema-camera a img { top: 106px;}
+.es #item-blackmagic-production-camera-4k a img { top: 122px;}
+.es #item-atem-converters p.tagline { width: 380px; }
+.es #item-atem-converters a img { top: 82px;}
+.es #item-hyperdeck-studio p.price { width: 70px; }
+.es #item-hyperdeck-studio a img { top: 80px; }
+.es #item-opengear-converters p.tagline { width: 170px; }
+.es #item-videohub-control p.tagline { width: 330px; }
+.es #item-videohub a img { top: 11px;}
+.es #item-videohub p.tagline { width: 320px;}
+.es #item-videohub .read-more { margin-bottom: 53px;}
+.es #item-video-recorder p.tagline { width: 220px; }
+.es #item-video-recorder a img { top: 19px;}
+.es #item-smartscope-duo-test-equipment p.tagline { width: 380px; }
+.es #item-smartscope-duo-test-equipment a img { top: 72px;}
+.es #item-decklink a img { top: -26px;}
+.es #item-davinci-revival a img { top: 10px;}
+.es #item-ultrascope a img { top: 20px;}
+.es #item-h264-pro-recorder a img { top: 35px;}
+.es #item-dvi-extender a img { top: 20px;}
+.es #item-smartview .read-more { margin-bottom:  40px;}
+.es #item-smartview a img { top: 11px;}
+.es #item-ultrastudio-for-usb3 a img { top: -24px;}
+
+/* fr */
+.fr #item-atem-converters p.tagline { width: 410px; }
+.fr #item-intensity-shuttle-thunderbolt p.tagline { width: 215px; }
+.fr #item-intensity-extreme p.tagline { width: 210px; }
+.fr #item-opengear-converters p.tagline { width: 170px; }
+.fr #item-videohub p.tagline { width: 380px; }
+.fr #item-videohub-control p.tagline { width: 380px; }
+.fr #item-hdlink p.tagline { width: 240px; }
+.fr #item-atem-television-studio p.tagline { width: 270px; }
+.fr #item-hyperdeck-studio p.price { width: 70px; }
+.fr #item-smartscope-duo-test-equipment p.tagline { width: 310px; }
+.fr #item-blackmagic-cinema-camera a img { top: 97px; }
+.fr #item-blackmagic-production-camera-4k a img { top: 121px; }
+
+/* jp */
+.jp #item-atem-converters p.tagline { width: 410px; }
+.jp #item-hyperdeck-studio a img { top: 79px; }
+.jp #item-smartscope-duo-test-equipment p.tagline { width: 360px; }
+.jp #item-blackmagic-production-camera-4k p.tagline,
+.jp #item-blackmagic-production-camera-4k p.price,
+.jp #item-blackmagic-production-camera-4k p.read-more {
+   display: inline;
+   margin-right: 10px;
+}
+.jp #item-videohub p.tagline { width: 410px; }
+.jp #item-intensity p.tagline { width: 230px; }
+
+/* kr */
+.kr #item-atem-converters p.tagline { width: inherit; }
+.kr #item-ultrastudio-express p.tagline { width: 210px; }
+.kr #item-teranex-processing p.tagline { width: 340px; }
+.kr #item-battery-converters p.tagline { width: 210px; }
+.kr #item-videohub p.tagline { width: 305px; }
+.kr #item-videohub-control p.tagline { width: inherit; }
+.kr #item-hdlink p.tagline { width: 190px; }
+.kr #item-dvi-extender p.tagline { width: 160px; }
+.kr #item-smartview p.tagline { width: 370px; }
+.kr #item-blackmagic-audio-monitor p.tagline { width: 360px; }
+.kr #item-blackmagic-multidock p.tagline { width: 345px; }
+.kr #item-smartscope-duo-test-equipment p.tagline { width: inherit; }
+.kr #item-ultrascope p.tagline { width: 190px; }
+.kr #item-video-recorder p.tagline { width: 205px; }
+.kr #item-h264-pro-recorder p.tagline { width: 175px; }
+
+/* ru */
+.ru #item-blackmagic-cinema-camera a img { top: 114px; }
+.ru #item-blackmagic-cinema-camera { height: 350px; }
+.ru #item-blackmagic-production-camera-4k a img { top: 127px; }
+.ru #item-blackmagic-production-camera-4k { height: 350px; }
+.ru #item-atem-television-studio p.tagline { width: inherit; }
+.ru #item-atem-converters p.tagline { width: inherit; }
+.ru #item-atem-converters a img { top: 81px; }
+.ru #item-hyperdeck-shuttle p.tagline { width: 175px; }
+.ru #item-hyperdeck-studio a img { top: 81px; }
+.ru #item-intensity p.tagline { width: 225px; }
+.ru #item-intensity-shuttle-usb3 p.tagline { width: 195px; }
+.ru #item-ultrastudio-for-usb3 p.tagline { width: 260px; }
+.ru #item-ultrastudio-for-usb3 a img { top: -40px; }
+.ru #item-ultrastudio-4k p.tagline { width: 400px; }
+.ru #item-ultrastudio-express p.tagline { width: 210px; }
+.ru #item-intensity-extreme p.tagline { width: 210px; }
+.ru #item-intensity-shuttle-thunderbolt p.tagline { width: 195px; }
+#Home-products.ru #item-intensity-shuttle-thunderbolt a img { top: 25px; }
+.ru #item-mini-converters p.tagline { width: 190px; }
+.ru #item-videohub p.tagline { width: 365px; }
+.ru #item-videohub a img { top: -9px; }
+.ru #item-videohub p.read-more { margin-bottom: 36px; }
+.ru #item-videohub-control p.tagline { width: 400px; }
+.ru #item-hdlink p.tagline { width: 410px; }
+.ru #item-hdlink a img { top: 62px;}
+.ru #item-dvi-extender a img { top: 20px; }
+.ru #item-smartview p.tagline { width: 390px; }
+.ru #item-blackmagic-multidock p.tagline { width: 380px; }
+.ru #item-smartscope-duo-test-equipment p.tagline { width: 390px; }
+.ru #item-smartscope-duo-test-equipment a img { top: 84px; }
+.ru #item-ultrascope a img { top: 20px; }
+
+/*------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------*/
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

@@ -1,0 +1,82 @@
+<div id="wrapper" style="display: block; width: 100%; height: 100%;" ng-controller="WidgetCtrl">
+    <div id="movingLayer" style="left: 50px;">
+        <div id="boardsContainer" style="width: 100%; height: 100%;">
+
+            <!--<div id="newSection" class="boardScroller" style="width: 100%; height: 100%; ">-->
+            <!--</div>-->
+
+            <div id="section">
+                <div id="section-wrapper" ng-model="sections" style="display:none;padding-top: 20px;padding-bottom: 20px;">
+                    <div class="section-box" ng-repeat="row in sections">
+                        <div class="section-header">
+                            <span style="position: relative;top: 30px;left: 25px;outline: none" contenteditable="true" ng-model="row.sectionHeading">{{row.sectionHeading[0]}} & {{row.sectionHeading[1]}}</span>
+                            <span id="section_{{ row.sectionId }}" class="previewSection" ng-click="showPreview(row.sectionHeading, row.sectionLayoutName, row.imageUrl, row.text)">&#59146;</span>
+                            <span class="saveSection">&#59213;</span>
+                        </div>
+                        <div class="layout-wrapper">
+                            <select data-ng-model="row.sectionLayoutName">
+                                <option value="show_one_paragraph">Change this to test ng-if</option>
+                                <option value="split_paragraph">Change again to test ng-if</option>
+                            </select>
+                        </div>
+                        <div ng-if="row.sectionLayoutName == 'show_one_paragraph'">
+
+
+                            <div class="text-wrapper">
+                                <textarea class="sectionParagraph" placeholder="Content goes here" ng-model="row.text[0]"></textarea>
+                            </div>
+                        </div>
+                        <div ng-if="row.sectionLayoutName == 'split_paragraph'">
+
+                            <div class="text-wrapper">
+                                <textarea class="sectionHalfParagraph" placeholder="Content goes here" ng-model="row.text[0]"></textarea>
+                                <textarea class="sectionHalfParagraph" placeholder="Content goes here" ng-model="row.text[1]"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="tabs" ng-controller="WidgetOptionsCtrl">
+            <div class="header">
+                <!--<span id="newPage" class="addNewPage" ng-click="clearPage()">&#128240;</span>-->
+                <span class="refreshTree" ng-click="addToTree()">&#57347;</span>
+                <span class="closeTree" ng-click="closeWidgetOptions()">&#10060;</span>
+            </div>
+            <div class="tab-body" >
+
+                <div id="tree-div" style="width:350px;margin-left:60px;background:white">
+                    <rp-tree><div></div></rp-tree>
+                </div>
+
+            </div>
+    </div>
+    <div id="top-bar">
+        <div id="firstLevel">
+            <div style="position: absolute; top:10px;left:80px;color: #ED1568; font-size: 22px;">RightPrism</div>
+        </div>
+    </div>
+    <div id="side-main-panel">
+        <span class="left-top-spacer"></span>
+        <div class="left-container">
+            <h2 class="separator">SITE</h2>
+            <ul>
+                <li>
+                    <div class="icon shapes" id="showTree" ng-click="showTree()">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="icon spaces" id="addSection" ng-click="addSection()">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</div>

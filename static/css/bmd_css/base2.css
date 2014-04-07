@@ -1,0 +1,526 @@
+@import url("reset.css");
+
+/*------------------------------------------------------------------------------------
+maxvoltar.com/archive/-webkit-font-smoothing
+------------------------------------------------------------------------------------*/
+html { -webkit-font-smoothing: antialiased; }
+
+/*------------------------------------------------------------------------------------
+mobile
+------------------------------------------------------------------------------------*/
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  /* rules for iPad in landscape orientation */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* iPhone, Android rules here */
+  body,
+  select,
+  input,
+  textarea,
+  #lightboxTitle,
+  #fancybox-error { font-family: Helvetica, sans-serif; }
+}
+
+/*------------------------------------------------------------------------------------
+access
+------------------------------------------------------------------------------------*/
+#ContentPlaceHolderDefault_MemberLogin_1_LogoutView,
+#ContentPlaceHolderDefault_MemberLogin_2_LogoutView { position: fixed; left: 10px; top: 10px; }
+#ContentPlaceHolderDefault_MemberLogin_1_LogoutView input,
+#ContentPlaceHolderDefault_MemberLogin_2_LogoutView input { border: 0; background-color: #fafafa; color: #999; padding: 0; }
+#ContentPlaceHolderDefault_MemberLogin_1_LogoutView input:hover,
+#ContentPlaceHolderDefault_MemberLogin_2_LogoutView input:hover { text-decoration: underline; }
+
+/*------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-family: 'Open Sans';
+}
+#hero {
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+}
+#hero #main {
+  border-bottom: solid 1px #cecece;
+}
+#hero #main h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#hero #main h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #ccc;
+}
+#hero #main .hero-center {
+  width: 1000px;
+  text-align: center;
+}
+#hero #main span {
+  font-family: "Lucida Grande", "Verdana", "Sans-serif";
+  font-size: 11px;
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  left: 30px;
+}
+#container {
+  width: 998px;
+  border-left: solid 1px #cecece;
+  border-right: solid 1px #cecece;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+table {
+  border-collapse: collapse;
+}
+img {
+  vertical-align: bottom;
+}
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 5px 0;
+  font-style: normal;
+  font-weight: 600;
+  color: #000;
+}
+h3 {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 18px 0;
+  font-style: normal;
+  font-weight: 300;
+  color: #000;
+}
+h4 {
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0 0 5px 0;
+  font-style: normal;
+  font-weight: 600;
+  color: #000;
+}
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 5px 0;
+  font-style: normal;
+  font-weight: 600;
+  color: #000;
+}
+p {
+  color: #333;
+  line-height: 22px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+p a {
+  color: #006fba;
+  font-weight: 600;
+}
+/* v3 styles */
+.v3 h2, .v3 h3 {
+  font-size: 29px;
+  line-height: 32px;
+}
+.v3 h2 {
+  margin: 0 0 6px 0;
+}
+.v3 h3, .v3 h2.no-subhead {
+  margin: 0 0 14px 0;
+}
+.v3 h4, .v3 h5 {
+  font-size: 24px;
+  line-height: 27px;
+}
+.v3 h4 {
+  margin: 0 0 5px 0;
+}
+.v3 h5, .v3 h4.no-subhead {
+  margin: 0 0 15px 0;
+}
+.v3 h5 {
+  font-weight: 300;
+}
+.v3 .staticHtml p {
+  color: #666;
+}
+.v3 hr {
+  border-top: 1px solid #e5e5e5;
+  width: 960px;
+  margin: 30px auto 0 auto;
+}
+/* end v3 styles */
+.clearer {
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+  overflow: hidden;
+}
+article {
+  padding: 1px 0 0; /* Avoid margin collapse */
+}
+.no-break {
+  white-space: nowrap;
+  display: inline-block;
+}
+.small {
+  font-size: 11px;
+  font-family: 'Lucida Grande', 'Open Sans', Verdana, Arial;
+  line-height: 15px;
+}
+.small strong {
+  color: #000;
+}
+
+/*------------------------------------------------------------------------------------
+global nav -- common with all languages
+------------------------------------------------------------------------------------*/
+#mainNav {
+  width: 1000px;
+  height: 120px;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+#mainNav ul {
+  margin: 0;
+  padding: 0;
+  height: 42px;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 78px;
+  width: 749px;
+}
+#mainNav li {
+  float: left;
+  margin: 0 1px 0 0;
+}
+#mainNav a {
+  text-decoration: none;
+  display: block;
+  height: 42px;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#mainNav #homeLink {
+  display: block;
+  height: 65px;
+  left: 780px;
+  margin: 0;
+  position: absolute;
+  top: -50px;
+  width: 200px;
+}
+#mainNav #homeLink a {
+  background: transparent url('images2/transparent.png');
+  height: 65px;
+  width: 200px;
+}
+
+/*------------------------------------------------------------------------------------
+sub nav -- common with all languages
+------------------------------------------------------------------------------------*/
+#subNav {
+    position: relative;
+    width: 1000px;
+    height: 36px;
+    margin: 0 auto;
+    background: url('images2/sub-nav/bg-sub-nav.png') no-repeat left top;
+    background-size: 1000px 36px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    #subNav { background-image: url("images2/sub-nav/bg-sub-nav@2x.png"); }
+}
+#subNav ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+    height: 36px;
+    list-style: none;
+    width: 1000px;
+}
+#subNav li {
+    float: left;
+    overflow: hidden;
+}
+#subNav a {
+    text-decoration: none;
+    display: block;
+    line-height: 36px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0 15px;
+    color: #555555;
+    text-shadow: 0 1px 0 #fff;
+}
+#subNav a.selected {
+    color: #000;
+    font-weight: 600;
+}
+#subNav a:hover {
+    color: #000;
+}
+#subNav #howtobuy {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border: 1px solid #a7a7a7;
+    line-height: 26px;
+    height: 26px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff;
+    -webkit-box-shadow: 0 1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff;
+    box-shadow: 0 1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff;
+    background: #ebebeb url('images2/sub-nav/bg-sub-nav-tile.png') repeat-x;
+}
+
+/*------------------------------------------------------------------------------------
+footer
+------------------------------------------------------------------------------------*/
+#footer-wrapper {
+  background: #eaeaea url('images2/bg-footer-grad.png') repeat-x top;
+}
+#footer {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#footer-top {
+  padding: 25px 0 19px;
+  overflow: hidden;
+}
+#footer-social {
+  float: right;
+  padding: 0 30px 0 0;
+  border-right: 1px solid #d1d1d1;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+#footer-social span {
+  float: left;
+}
+.footer-social-bt{
+  float: right;
+  margin: 5px 0 0 10px;
+  line-height: 0;
+}
+#footer-location {
+  float: right;
+  margin: 0 45px 0 30px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+#footer-location-name {
+  background-color: #e9e9e9;
+  -moz-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #b6b6b6;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  height: 29px;
+  line-height: 29px;
+  display: inline-block;
+  margin: 0 0 0 9px;
+}
+#footer-location-name a{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+  padding: 0 14px;
+}
+#footer-bottom {
+  margin: 0 29px;
+  padding: 17px 0 37px 0;
+  border-top: 1px solid #d1d1d1;
+}
+#footer-bottom p {
+  font-size: 11px;
+  color: #696969;
+  text-align: center;
+  line-height: 18px;
+  font-family: "Lucida Grande", "Verdana", "Sans-serif";
+}
+
+/*------------------------------------------------------------------------------------
+location selector
+------------------------------------------------------------------------------------*/
+#location-flag-container {
+  width: 766px;
+  position: absolute;
+  display: none;
+  top: -424px;
+  right: -8px;
+  z-index: 3;
+}
+#location-flag-container-top {
+  background: url('images2/location/bg-location-top.png') top no-repeat;
+  background-size: 766px 18px;
+  width: 766px;
+  height: 18px;
+}
+#location-flag-container-mid {
+  background: url('images2/location/bg-location-tile.png') repeat-y;
+  background-size: 766px 1px;
+  width: 700px;
+  padding: 0 33px;
+  overflow: hidden;
+}
+.location-flag-line {
+  padding-top: 30px;
+  overflow: hidden;
+}
+.location-flag-line:first-child {
+  padding-top: 19px;
+}
+.location-flag-line:last-child {
+  padding-bottom: 8px;
+}
+#location-flag-container-bottom {
+  background: url('images2/location/bg-location-bottom.png') no-repeat top left;
+  background-size: 766px 18px;
+  width: 766px;
+  height: 18px;
+  margin-top: 0px;
+  padding-bottom: 19px;
+}
+#location-flag-container-arrow {
+  background: url('images2/location/bg-location-arrow.png') no-repeat top left;
+  background-size: 42px 28px;
+  width: 42px;
+  height: 28px;
+  margin-top: 0px;
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #location-flag-container-top { background-image: url("images2/location/bg-location-top@2x.png"); }
+  #location-flag-container-mid { background-image: url("images2/location/bg-location-tile@2x.png"); }
+  #location-flag-container-bottom { background-image: url("images2/location/bg-location-bottom@2x.png"); }
+  #location-flag-container-arrow { background-image: url("images2/location/bg-location-arrow@2x.png"); }
+}
+.location-box {
+  width: 100px;
+  height: 70px;
+  float: left;
+  text-align: center;
+}
+.flag-img {
+  width: 60px;
+  height: 40px;
+}
+.location-box a {
+  display: block;
+  width: 60px;
+  height: 40px;
+  margin: auto;
+}
+.location-box a:hover {
+  -moz-box-shadow: 0 0 2px 2px #64abd3;
+  -webkit-box-shadow: 0 0 2px 2px #64abd3;
+  box-shadow: 0 0 2px 2px #64abd3;
+}
+.flag-txt {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  margin: 6px 0 0;
+}
+
+/*------------------------------------------------------------------------------------
+fancybox customisation
+------------------------------------------------------------------------------------*/
+#fancybox-close {
+  margin-right: 35px !important;
+  margin-top: 35px !important;
+  background-image: url("images/close.png") !important;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20px 20px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    #fancybox-close { background-image: url("images/close@2x.png") !important; }
+}
+#fancybox-content {
+  padding: 20px !important;
+  border: none !important;
+}
+#fancybox-img {
+  border: 1px solid #E5E5E5 !important;
+  padding: 9px !important;
+}
+#lightboxTitle {
+  margin: 10px 0 10px 0;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 11px !important;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, Arial, sans-serif !important;
+  color: #333 !important;
+}
+#fancybox-error {
+  font-size: 11px !important;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, Arial, sans-serif !important;
+  color: #333 !important;
+}
+#lightboxTitle span { float: right; }
+#lightboxTitle span a, #lightboxTitle span a:active, #lightboxTitle span a:hover, #lightboxTitle span a:visited {
+  color: #333333;
+}
+
+/*------------------------------------------------------------------------------------
+heading bar
+------------------------------------------------------------------------------------*/
+.headingbar {
+  display: block;
+  width: 910px;
+  padding: 8px 45px;
+  margin: 30px -1px 20px -1px;
+  background: #fff url('images/backDivider.png') no-repeat left top;
+  height: 21px;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+/*------------------------------------------------------------------------------------
+v3 redundant modules
+------------------------------------------------------------------------------------*/
+.v3 #hero { display: none; }
+
+/*------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------*/
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
